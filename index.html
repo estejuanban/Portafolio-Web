@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Siabato | Desarrollador Web</title>
+
+    <!------------------------------------ Estilos CSS ---------------------------------------->
+
+    <link rel="stylesheet" href="/assets/CSS/reset.css">
+    <link rel="stylesheet" href="/assets/CSS/styles.css" />
+
+    <!---------------------------------------- Icono de de la pagina ojo cambiar ---------------->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!------------------------------- Animaciones de CSS pagina CDN animate.css ------------------------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+
+    <!-------------------------------------- Barra de Navegación ----------------------------------------------->
+     <nav class="header" id="header">
+     <h1 class="nombre__creador">JUAN ESTEBAN SIABATO</h1>
+        <ul class="navegacion">
+          <li class="contenedor__link__navegacion"><a href="#" class="nav-link">Formación</a></li>
+          <li class="contenedor__link__navegacion"><a href="#sobremi" class="nav-link">Sobre mi</a></li>
+          <li class="contenedor__link__navegacion"><a href="#habilidades" class="nav-link">Skills</a></li>
+          <li class="contenedor__link__navegacion"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li class="contenedor__link__navegacion"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li class="contenedor__link__navegacion"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="menu-mobile" id="menu-mobile">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button> 
+  </nav>
+
+
+
+    <!-------------------------------------------- Sección Hero --------------------------------------------->
+    <main class="principal">
+    <section class="hero" id="about">
+        <img
+          src="/assets/Images/Foto perfil.jpeg"
+          alt="juan-siabato"
+          loading="desierto"
+          class="hero__img"
+        />
+        <div class="bio animate__animated animate__shakeX"> <!-- Los nombres de clase son de CSS animado y nos sirve para dar animación al container de texto Sobre Mí importada de la librería animate.css.-->
+          <h2 class="bio__titulo">¡Hola!</h2>
+          <p class="bio__texto">
+             Soy Juan Esteban, desarrollador Junior Front-end con conocimientos básicos en HTML, JavaScript y CSS.  
+          </p>
+          <p class="bio__texto">teniendo el gusto  de formarme profesionalmente con ADEMAAS, Freecodecamp, ORACLE - ALURA Latam, Servicio Nacional de Aprendizaje  SENA: Tecnológico en Análisis y Desarrollo de Software.</p>
+        </div>
+  </section>
+
+
+    <!---------------------------------------------------  Más sobre mi ----------------------------->
+
+    <section class="sobremi" id="sobremi">
+      <h2 class="mas__sobre__mi__titulo">MÁS SOBRE MI</h2>
+      <p class="mas__sobre__mi__texto">
+       Mi pasión como programador nace por la necesidad de buscar soluciones rápidas y concisas a cualquier problema, los lenguajes nos permiten plasmar: pensamientos, visiones, metas, soluciones y sueños en este inmenso mundo del desarrollo, dia a dia aprendes nuevas cosas que se adaptan a las necesidades del momento.        
+            </p>
+      <p class="mas__sobre__mi__texto">
+        Pienso que al compartir tu conocimiento con tus compañeros afianzas más el tuyo y ayuda a llegar a las metas impuestas por erl proyecto más rápido y con una mejor efectividad.  
+      </p>
+
+    </section>
+
+    <!------------------------------------------------------- Sección Skills ------------------------------>
+
+    <section class="habilidades" id="habilidades">
+      <h2 class="titulo__habilidades">SKILLS</h2>
+
+      <div class="contenedor__habilidades">
+        <div class="primer__contenedor__habilidades">
+          <img 
+            src="assets/Images/iconos/icons8-html5.svg"
+            alt=""
+            loading="lazy"
+            class="habilidades__imagen"
+          />
+          <img
+            src="assets/Images/iconos/icons8-css.svg"
+            alt=""
+            loading="lazy"
+            class="habilidades__imagen"
+          />
+          <img
+            src="assets/Images/iconos/icons8-js.svg"
+            alt=""
+            loading="lazy"
+            class="habilidades__imagen"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------- Sección Hobbies ------------------------------------------>
+
+    <section class="hobbies" id="hobbies">
+      <h2 class="titulo__hobbies">Habilidades</h2>
+
+      <div class="contenedor__hobbies">
+        <div class="primer__contenedor__hobbies">
+          <img 
+            src="assets/Images/iconos/icons8-bot.gif"
+            alt=""
+            loading="lazy"
+            class="hobbies__imagen"
+          />
+      
+          <img
+            src="assets/Images/iconos/icons8-jake.gif"
+            alt=""
+            loading="lazy"
+            class="hobbies__imagen"
+          />
+
+          <img
+            src="assets/Images/iconos/icons8-marcapáginas.gif"
+            alt=""
+            loading="lazy"
+            class="hobbies__imagen"
+          />
+          
+        </div>
+        <div class="segundo__contenedor__hobbies"></div>
+          <img 
+            src="assets/Images/iconos/icons8-chocolatina.gif"
+            alt=""
+            loading="lazy"
+            class="hobbies__imagen"
+          />
+          <img
+            src="assets/Images/iconos/icons8-scooter.gif"
+            alt=""
+            loading="lazy"
+            class="hobbies__imagen"
+          />
+          <img
+            src="assets/Images/iconos/icons8-onda-sonora.gif"
+            alt=""
+            loading="lazy"
+            class="hobbies__imagen"
+          />
+          
+        </div>
+      </div>
+    </section>
+
+        <!-- Fin de Sección Hobbies-->
+
+
+    <!-- Sección Proyectos -->
+
+    <section class="proyectos" id="proyectos">
+      <h2 class="titulo__de__proyectos">Algunos de mis proyectos recientes</h2>
+      <div class="contenedor__de__proyectos">
+        <div class="contenedor__de__proyectos__tarjeta__de__proyectos">
+          <img
+            src="assets/Images/Encriptador de Texto.JPG"
+            alt="rastreador__de__gastos"
+            loading="lazy"
+            class="foto__de__proyecto"
+          />
+          <h3 class="">Encriptador de Texto </h3>
+          <p class="detalles__de__proyecto">
+            Este proyecto muestra la interacción de HTML y JS en el cual podemos cifrar cualquier texto, su descifrado también se realiza en la misma pagina, luego de ingresar su contraseña correspondiente.  
+          </p>
+          <a href="https://challenge-1-encriptador-de-texto-eflg32vc2.vercel.app/" target="_blank" class="enlace-de-proyecto">Check it Out</a>
+        </div>
+        <div class="contenedor__de__proyectos__tarjeta__de__proyectos">
+          <img
+            src="assets/Images/Juego Numero.JPG"
+            alt="netflic-clone"
+            loading="lazy"
+            class="foto__de__proyecto"
+          />
+          <h3 class="titulo__de__proyecto">Juego del Número Secreto</h3>
+          <p class="detalles__de__proyecto">
+            En este proyecto encontraremos un juego simple, en el cual el usuario tendrá cierto numero de opciones para poder adivinar un numero secreto, el sistema nos indica si el intento es mayor o menor al resultado esperado, o si es el numero correcto.   
+          </p>
+          <a href="https://estejuanban.github.io/Juego-Secreto/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="contenedor__de__proyectos__tarjeta__de__proyectos">
+          <img
+            src="assets/Images/Portafolio Inicial.JPG"
+            alt="greeny-earth"
+            loading="lazy"
+            class="foto__de__proyecto"
+          />
+          <h3 class="titulo__de__proyecto">Page Portafolio</h3>
+          <p class="detalles__de__proyecto">
+            En esta plantilla encontramos un primer bosquejo, sobre un portafolio básico de presentación, con un fondo oscuro y unas letras claras de contraste. 
+          </p>
+          <a href="https://portafolio-flbeysxeu-juan-estebans-projects-95300028.vercel.app/" target="_blank" class="enlace-de-proyecto">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto-->
+
+
+    <section class="contacto" id="contacto">
+      <h2 class="titulo__contacto">Contáctame</h2>
+      <div class="contenedor__formulario__contacto">
+        <div class="formulario__contacto">
+          <form action="https://formspree.io/f/xvgpjndw" method="POST">
+            <div class="control__formulario">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Escribe tu nombre"
+                class="input_formulario"
+                required
+              />
+            </div>
+            <div class="control__formulario">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Ingreso tu correo electrónico"
+                class="input_formulario"
+                required
+              />
+            </div>
+            <div class="control__formulario">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                cols="60"
+                rows="10"
+                placeholder="Escribe tu mensaje"
+                name="mensaje"
+                class="input_formulario"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              id="submit-btn"
+              class="boton_submit"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de redes sociales - Fijado a la derecha -->
+
+    <div class="sociales">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/Images/iconos/icons8-instagram-viejo.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="icon_social"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/Images/iconos/icons8-github.gif"
+          alt="Github"
+          loading="lazy"
+          class="icon_social"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/Images/iconos/icons8-linkedin.gif" 
+        alt="Linkedin" 
+        class="icon_social"
+      /></a>
+
+    </main>
+
+    <!-- Icono de volver al Inicio-->
+
+    <i class="desplazarse__hacia__arriba" id="desplazarse__hacia__arriba"
+    ><img
+    src="assets/Images/iconos/icons8-gesto-de-desplazamiento-hacia-abajo.gif"
+    class="socicon__desplazarse__hacia__arriba"
+      alt="desplazarse__hacia__arriba__"
+      /></i>
+      
+      
+    <!-- Sección Footer  -->
+
+    <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Construido  &#9883; por
+        <a href="#" target="_blank"
+          >Juan Esteban Siabato Sabogal </a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+
+
+    <script src="srsc.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

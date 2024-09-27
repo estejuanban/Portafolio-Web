@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
+/* ---------------------------------------------------- Variables ------------------------------------------------------------------- */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --font-family2: "New Amsterdam", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #aba4a4be;
+  --bg-color2:#ffffffbe;
+  --primary-color: #444c9a;
+  --secondary-color: #1ec149;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+  --purple: #c48d21;
+  --font-family-sans-serif: "Open Sans", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+
+
+/*------------------------------------------------------ header ---------------------------------------------------------------------*/
+body{
+  font-family: var(--font-family2);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  /*la propiedad de position para que permanezca en la parte superior sin importar qué*/
+  z-index: 1;
+  /*con el valor de 1  se asegura de que la barra de navegación se muestre sobre cualquier otro elemento de la página web.*/
+  top: 0;
+  left: 0;
+  padding: 1.5rem 3.5rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background-color:var(--bg-color)
+  
+}
+
+.nombre__creador {
+  color: var(--primary-color);
+  font-size: 40px;
+}
+
+.nav-link {
+  color: var(--primary-color);
+  transition: var(--transition);
+  font-size: 30px;
+}
+
+.link__navegacion:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.navegacion {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.menu-mobile {
+  font-weight: var(--bold-font);
+}
+
+.menu-mobile {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+/*---------------------------------------------------- Hero -----------------------------------------------------------*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;      
+  gap: 10.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+  padding: 100px;
+  padding-top: 100px;
+}
+
+.hero__img {
+  height: 24.5rem;
+  width: 17.5rem;
+  border-radius: 20px;
+  filter: drop-shadow(1px 1px 10px var(--primary-shadow));
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio__titulo {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.bio__texto {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  text-align: justify;
+
+}
+
+
+
+
+/*------------------------------------------------------- Sobre Mí ----------------------------------------*/
+
+.sobremi {
+  background-color: var(--bg-color2);
+  padding: 1rem 6rem;
+}
+
+.mas__sobre__mi__titulo {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+
+  
+}
+
+.mas__sobre__mi__texto {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+  text-align: justify;
+
+}
+
+
+
+/*--------------------------------------------------- Sección Skills -----------------------------------------*/
+
+.habilidades {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.titulo__habilidades {
+  margin-bottom: 1rem;
+
+  
+}
+
+.primer__contenedor__habilidades img {
+  padding: 1.25rem;
+}
+
+.habilidades__imagen{
+  width: 11.875rem;
+  height: 11.25rem;
+  background-color:var(--bg-color2);
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+
+/*--------------------------------------------------- Sección Hobbies ------------------------------------------*/
+
+.hobbies {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.titulo__hobbies {
+  margin-bottom: 1rem;
+
+  
+}
+
+.primer__contenedor__hobbies img {
+  padding: 1.25rem;
+}
+
+.hobbies__imagen{
+  width: 9.875rem;
+  height: 9.25rem;
+  background-color:var(--bg-color2);
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+
+
+/*-------------------------------------------------- Sección Proyectos ------------------------------------------------- */
+
+.contenedor__de__proyectos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 10px;
+  
+}
+
+.proyectos {
+  background-color: var(--bg-color2);
+  padding: 32px 0;
+  margin-top: 2rem;
+ }
+
+.foto__de__proyecto {
+  width: 65%;
+  height: 60%;
+}
+
+.titulo__de__proyectos{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.detalles__de__proyecto {
+  padding: 0.4rem;
+  margin-bottom: var(--bottom-margin);
+
+}
+
+.titulo-de-proyectos {
+  margin-bottom: var(--bottom-margin);
+  
+}
+
+
+.contenedor__de__proyectos__tarjeta__de__proyectos{
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  font-family: var(--font-family2);
+}
+
+
+
+/*------------------------------------------------------ Sección Contacto ---------------------------------------------------*/
+
+.contacto {
+  margin-top: 2rem;
+}
+
+.titulo__contacto {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contenedor__formulario__contacto {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+}
+
+.contenedor__formulario__contacto label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contenedor__formulario__contacto textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contenedor__formulario__contacto .input_formulario {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+.input_formulario::placeholder{
+  padding: 0.5rem;
+  color: var(--primary-color)
+}
+
+.boton_submit{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color:var(--bg-color2);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 2rem;
+  font-family: var(--font-family2);
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  color: var(--primary-color);
+}
+.boton_submit:hover{
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+/*--------------------------------------------------------- Sección ICON ------------------------------------------------- */
+.sociales {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.icon_social {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+/*---------------------------------------------------- Icono Desplazamiento Header ---------------------------------------------*/
+
+.desplazarse__hacia__arriba {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.socicon__desplazarse__hacia__arriba {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
+/*----------------------------------------------------------------Footer------------------------------------------------------------*/
+
+footer {
+  background-color: var(--bg-color2);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+
+
+/*------------------------------------------------------Responsivas 720px ---------------------------------------------------------- */
+
+@media screen and (max-width: 720px){
+
+ nav {
+    padding: 1.5rem 1.5rem;
+    gap:50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .nombre__creador {
+    font-size: 30px;
+  }
+
+  .navegacion{
+    position: fixed;
+    background-color: var(--bg-color2);
+    flex-direction: column;
+    top: 85px;
+    left: 9%;
+    width: 79%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+
+  }
+  .contenedor__link__navegacion{
+    margin: 8px;
+  }
+
+  .link__navegacion{
+    font-size: 20px;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero__img {
+        height: 18.5rem;
+        width: 14.5rem;
+    }
+
+  .bio {
+    margin-top: 6rem;
+    width: 20.5rem;
+  }
+
+  .sobremi {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .mas__sobre__mi__titulo {
+    text-align: center;
+  }
+
+  .mas__sobre__mi__texto {
+    text-align: justify;
+  }
+
+  .habilidades__imagen {
+    width: 7.5rem;
+    height: 6.5rem;
+  }
+
+  .hobbies__imagen{
+    width: 7.5rem;
+    height: 6.5rem;
+  }
+
+  .contenedor__de__proyectos {
+    flex-direction: column;
+    width: 45rem;
+  }
+
+
+  .contenedor__formulario__contacto {
+    max-width: 23.75rem;
+  }
+
+}
+
+
+
+/*------------------------------------------------------- Responsivas 420px --------------------------------------------------- */
+@media screen and (max-width: 420px) {
+
+  .hero__img  {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .contenedor__de__proyectos {
+    width: 25rem;
+  }
+
+  .contenedor__formulario__contacto{
+    max-width: 17.75rem;
+  }
+  .hero__img {
+    height: 15.5rem;
+    width: 12rem;
+}
+
+}   
